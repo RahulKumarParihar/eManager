@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eManager.Domain", "eManager.Domain\eManager.Domain.csproj", "{F6FCBEED-83AF-4C4D-95D5-20C09B723280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eManager.Web", "eManager.Web\eManager.Web.csproj", "{752773C8-8893-4069-8670-C135BB444BB3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6FCBEED-83AF-4C4D-95D5-20C09B723280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FCBEED-83AF-4C4D-95D5-20C09B723280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FCBEED-83AF-4C4D-95D5-20C09B723280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FCBEED-83AF-4C4D-95D5-20C09B723280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{752773C8-8893-4069-8670-C135BB444BB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752773C8-8893-4069-8670-C135BB444BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752773C8-8893-4069-8670-C135BB444BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752773C8-8893-4069-8670-C135BB444BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
