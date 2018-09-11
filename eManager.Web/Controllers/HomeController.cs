@@ -6,12 +6,12 @@ namespace eManager.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private DepartmentDb _db = new DepartmentDb();
+        private IDepartmentDataSource _db;
 
-        //public HomeController(IDepartmentDataSource db)
-        //{
-        //    _db = db;
-        //}
+        public HomeController(IDepartmentDataSource db)
+        {
+            _db = db;
+        }
 
         public ActionResult Index()
         {

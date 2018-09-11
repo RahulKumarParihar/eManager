@@ -10,8 +10,8 @@ namespace eManager.Web.Infrastructure
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
 
-        IQueryable<Employee> IDepartmentDataSource.Employees => throw new NotImplementedException();
+        IQueryable<Employee> IDepartmentDataSource.Employees => Employees;
 
-        IQueryable<Department> IDepartmentDataSource.Departments => throw new NotImplementedException();
+        IQueryable<Department> IDepartmentDataSource.Departments => Departments;
     }
 }
