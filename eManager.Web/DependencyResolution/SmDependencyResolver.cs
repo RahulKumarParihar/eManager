@@ -10,10 +10,21 @@ namespace eManager.Web
 
         private readonly IContainer _container;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SmDependencyResolver"/> class.
+        /// </summary>
+        /// <param name="container">The container.</param>
         public SmDependencyResolver(IContainer container) {
             _container = container;
         }
 
+        /// <summary>
+        /// Resolves singly registered services that support arbitrary object creation.
+        /// </summary>
+        /// <param name="serviceType">The type of the requested service or object.</param>
+        /// <returns>
+        /// The requested service or object.
+        /// </returns>
         public object GetService(Type serviceType) {
             if (serviceType == null) return null;
             try {
@@ -27,6 +38,13 @@ namespace eManager.Web
             }
         }
 
+        /// <summary>
+        /// Resolves multiply registered services.
+        /// </summary>
+        /// <param name="serviceType">The type of the requested services.</param>
+        /// <returns>
+        /// The requested services.
+        /// </returns>
         public IEnumerable<object> GetServices(Type serviceType) {
             return _container.GetAllInstances(serviceType).Cast<object>();
         }
