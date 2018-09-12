@@ -1,15 +1,14 @@
 ﻿using System.Web.Mvc;
 using eManager.Domain;
-using eManager.Web.Infrastructure;
 
 namespace eManager.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private IDepartmentDataSource _db;
+        private readonly IDepartmentDataSource _db;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="HomeController"/> class.
+        ///     Initializes a new instance of the <see cref="HomeController" /> class.
         /// </summary>
         /// <param name="db">The database.</param>
         public HomeController(IDepartmentDataSource db)
@@ -18,7 +17,7 @@ namespace eManager.Web.Controllers
         }
 
         /// <summary>
-        /// Indexes this instance.
+        ///     Indexes this instance.
         /// </summary>
         /// <returns></returns>
         public ActionResult Index()
@@ -28,7 +27,7 @@ namespace eManager.Web.Controllers
         }
 
         /// <summary>
-        /// Abouts this instance.
+        ///     Abouts this instance.
         /// </summary>
         /// <returns></returns>
         public ActionResult About()
@@ -39,7 +38,7 @@ namespace eManager.Web.Controllers
         }
 
         /// <summary>
-        /// Contacts this instance.
+        ///     Contacts this instance.
         /// </summary>
         /// <returns></returns>
         public ActionResult Contact()

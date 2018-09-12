@@ -2,7 +2,7 @@
 
 namespace eManager.Domain
 {
-    public class Department
+    public class Departments
     {
         /// <summary>
         ///     Gets or sets the identifier.
@@ -26,6 +26,6 @@ namespace eManager.Domain
         /// <value>
         ///     The employees.
         /// </value>
-        public virtual ICollection<Employee> Employees { get; set; }
+        public virtual ICollection<Employees> Employees { get; set; }
     }
 }

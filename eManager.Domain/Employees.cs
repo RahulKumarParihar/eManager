@@ -1,6 +1,6 @@
 ﻿namespace eManager.Domain
 {
-    public class Employee
+    public class Employees
     {
         /// <summary>
         ///     Gets or sets the identifier.

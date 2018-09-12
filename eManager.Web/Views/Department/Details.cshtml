@@ -1,0 +1,29 @@
+﻿@model eManager.Domain.Departments
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Departement Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Department Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+    <table>
+        <th>Name</th>
+        @foreach (var emp in Model.Employees)
+        {
+            <tr>
+                <td>@emp.Name</td>
+            </tr>
+        }
+    </table>
+</div>

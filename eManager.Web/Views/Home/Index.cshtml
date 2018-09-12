@@ -1,4 +1,4 @@
-﻿@model IEnumerable<eManager.Domain.Department>
+﻿@model IEnumerable<eManager.Domain.Departments>
 
 @{
     ViewBag.Title = "List of Department";
@@ -9,7 +9,7 @@
     @foreach (var item in Model)
     {
         <li>
-            @Html.DisplayFor(modelItem => item.Name)
+            @Html.ActionLink(item.Name, "Details", "Department", new {item.ID}, null)
         </li>
     }
 </ul>
