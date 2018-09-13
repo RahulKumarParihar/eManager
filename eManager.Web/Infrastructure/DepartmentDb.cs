@@ -37,5 +37,10 @@ namespace eManager.Web.Infrastructure
         ///     The departments.
         /// </value>
         IQueryable<Departments> IDepartmentDataSource.Departments => Departments;
+
+        /// <summary>
+        /// Saves this instance.
+        /// </summary>
+        public void Save() => SaveChanges();
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace eManager.Domain
+﻿using System;
+
+namespace eManager.Domain
 {
     public class Employees
     {
@@ -17,5 +19,13 @@
         ///     The name.
         /// </value>
         public virtual string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets the hire date.
+        /// </summary>
+        /// <value>
+        /// The hire date.
+        /// </value>
+        public virtual DateTime? HireDate { get; set; }
     }
 }

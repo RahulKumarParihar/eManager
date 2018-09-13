@@ -4,19 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Departement Details</h2>
+<h2>@Model.Name</h2>
 
 <div>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            Department Name
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-    </dl>
+    @Html.ActionLink("Add an employee","Create","Employee",new {DepartmentId = Model.ID}, null)
     <table>
         <th>Name</th>
         @foreach (var emp in Model.Employees)
